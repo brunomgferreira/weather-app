@@ -3,8 +3,34 @@
   <head>
     <meta charset="utf-8" />
     <title>Weather App</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"/>
+    <script src="https://kit.fontawesome.com/6813d7d644.js" crossorigin="anonymous"></script>
   </head>
   <body>
+    <main>
+      <form>
+        <div class="form-group">
+          <button class="search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+          <input type="text" placeholder="Search city">
+        </div>
+      </form>
+      <div class="main-weather-display">
+        <div class="general-info">
+          <p class="condition">Mostly Sunny</p>
+          <h1 class="location">Trofa, Portugal</h1>
+          <span class="degrees">
+            21
+          </span>
+        </div>
+        <div class="weather-details">
+          <p class="feels-like">Feels like: 23</p>
+          <p class="wind-kmh">Wind: 5 km/h</p>
+          <p class="humidity">Humidity: 45</p>
+        </div>
+      </div>
+    </main>
     <script src="bundle.js"></script>
   </body>
 </html>

@@ -1,3 +1,108 @@
 body {
-    color: red;
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
 }
+
+.form-group {
+    float: right;
+    height: 80%;
+    position: relative;
+    margin: 2.5rem 3.5rem 0 0;
+}
+
+.search {
+    position: absolute;
+    top: 27%;
+    left: 6%;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.search i {
+    font-size: 1.3rem;
+}
+
+input[type="text"] {
+    width: 24rem;
+    height: 100%;
+    border: solid 2px;
+    outline: none;
+    background: none;
+    padding: 0.5rem 0.2rem 0.5rem 4.5rem;
+    color: black;
+    font-size: 1.6rem;
+    border-radius: 0.5rem;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.main-weather-display {
+    position: absolute;
+    top: 30%;
+    width: 90%;
+    margin-left: 10%;
+  }
+
+.condition {
+    font-size: 2.2rem;
+    letter-spacing: 0.1rem;
+    margin: 0;
+}
+
+.location {
+    font-size: 4rem;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.degrees {
+    position: relative;
+    font-size: 15rem;
+    margin: 0;
+}
+
+.degrees::after {
+    content: '\00B0 C';
+    font-size: 3rem;
+    position: absolute;
+    top: 1.8rem;
+    left: 17.3rem;
+}
+
+.weather-details {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+    font-weight: 900;
+    letter-spacing: 0.1rem;
+    position: absolute;
+    border-left: 0.2rem solid rgba(255, 255, 255, 0.5);
+    top: 45%;
+    left: 22.5rem;
+    height: 10rem;
+    padding-left: 3.5rem;
+    justify-content: space-between;
+}
+
+.feels-like {
+    position: relative;
+}
+
+.feels-like::after {
+    content: '\00B0 C';
+    position: absolute;
+    bottom: 1.1rem;
+    left: 13.8rem;
+    font-size: 1rem;
+}
+
+.humidity::after {
+    content: '%';
+  }
