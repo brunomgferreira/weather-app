@@ -18,7 +18,9 @@ const weather = (() => {
         const endpoint = `http://api.weatherapi.com/v1/current.json?key=89d8b407931746c09d0182200231108&q=${city}`;
         try {
             const response = await fetch(endpoint, { mode: "cors" });
-            if(!response.ok) throw new Error(`City ${city} not found`);
+            if(!response.ok) {
+                throw new Error(`City ${city} not found`);
+            }
             const data = convertData(await response.json());
             return data;
         } catch(error) {
