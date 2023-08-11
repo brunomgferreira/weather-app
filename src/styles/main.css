@@ -95,14 +95,6 @@ input[type="text"] {
     position: relative;
 }
 
-.feels-like::after {
-    content: '\00B0 C';
-    position: absolute;
-    bottom: 1.1rem;
-    left: 13.8rem;
-    font-size: 1rem;
-}
-
 .humidity::after {
     content: '%';
   }
