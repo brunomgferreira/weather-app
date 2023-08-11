@@ -10,7 +10,7 @@ const view = (() => {
          
         condition.textContent = `${weatherData.weatherCondition}`;
         location.textContent = `${weatherData.cityName}, ${weatherData.country}`;
-        degrees.textContent = `${weatherData.temperature}`;
+        degrees.textContent = `${Math.round(weatherData.temperature)}`;
         feelsLike.innerHTML = `Feels like: ${weatherData.feelsLike}<sup>&#176C</sup>`;
         windKmh.textContent = `Wind: ${weatherData.windSpeed} kph`;
         humidity.textContent = `Humidity: ${weatherData.humidity}`;
