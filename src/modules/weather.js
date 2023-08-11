@@ -15,7 +15,7 @@ const weather = (() => {
     }
 
     async function getData(city) {
-        const endpoint = `http://api.weatherapi.com/v1/current.json?key=89d8b407931746c09d0182200231108&q=${city}`;
+        const endpoint = `https://api.weatherapi.com/v1/current.json?key=89d8b407931746c09d0182200231108&q=${city}`;
         try {
             const response = await fetch(endpoint, { mode: "cors" });
             if(!response.ok) {
